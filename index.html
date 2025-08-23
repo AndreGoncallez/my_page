@@ -3,115 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrimeOps | Infraestrutura e DevSecOps</title>
+  <title>PrimeOps | Infraestrutura, Cloud e DevSecOps</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="PrimeOps | Infraestrutura, DevSecOps, Cloud Security, Redes e Fibra Óptica. Portfólio técnico, cases reais e conteúdo no YouTube.">
+  <meta property="og:title" content="PrimeOps | Infraestrutura e DevSecOps" />
+  <meta property="og:description" content="Infraestrutura moderna, segurança em nuvem e automação DevSecOps aplicados a ambientes corporativos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://primeops.tech" />
+  <meta property="og:image" content="https://primeops.tech/images/banner.png" /> 
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0f172a;
-      color: #f1f5f9;
-    }
-    header {
-      background-color: #1e293b;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      color: #cbd5e1;
-      text-decoration: none;
-      margin-left: 1.5rem;
-    }
-    nav a:hover {
-      color: #38bdf8;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #38bdf8;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-    .project, .video {
-      background-color: #1e293b;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.875rem;
-      color: #94a3b8;
-    }
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>PrimeOps</h1>
+    <!-- Logo -->
+    <img src="images/logo.png" alt="Logo PrimeOps">
     <nav>
       <a href="#sobre">Sobre</a>
+      <a href="#certificacoes">Certificações</a>
       <a href="#projetos">Projetos</a>
       <a href="#youtube">YouTube</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <section>
-    <h2>DevSecOps | Cloud | Redes & Fibra Óptica</h2>
-    <p>Especialista em infraestrutura, segurança da informação, reestruturação de redes corporativas e projetos com fibra óptica. Compartilho conteúdo técnico e práticas reais de campo no meu canal e portfólio.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Infraestrutura, Cloud e DevSecOps</h1>
+    <p>Transformando ambientes corporativos com redes modernas, segurança em nuvem e automação de operações.</p>
   </section>
 
+  <!-- Sobre -->
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p>Sou profissional com sólida experiência em redes, instalação e manutenção de infraestrutura, fibra óptica, e soluções em nuvem. Apaixonado por tecnologia e melhoria contínua, busco unir prática de campo com estratégias modernas como DevOps e segurança aplicada.</p>
+    <p>Sou profissional de tecnologia com sólida experiência em <strong>infraestrutura, redes e fibra óptica</strong>, em constante evolução para as áreas de <strong>DevSecOps, segurança em nuvem e observabilidade</strong>.  
+    Minha missão é unir prática de campo e inovação em cloud para entregar ambientes resilientes, seguros e escaláveis.</p>
   </section>
 
+  <!-- Certificações -->
+  <section id="certificacoes">
+    <h2>Certificações & Estudos</h2>
+    <ul>
+      <li>📍 CCNA Enterprise (em andamento – Dez/2025)</li>
+      <li>📍 LPIC-1 Linux Professional (em andamento – 2025)</li>
+      <li>📍 Cisco CyberOps Associate (em andamento – 2025)</li>
+      <li>📍 Google Cloud Associate Cloud Engineer (Q1 2026)</li>
+      <li>📍 Google Cloud Professional Cloud Security Engineer (Meta 2026)</li>
+      <li>📍 Pós-graduação em Cibersegurança & Governança de Dados – PUC Minas</li>
+    </ul>
+    <!-- Sugestão: incluir badges Credly -->
+  </section>
+
+  <!-- Projetos -->
   <section id="projetos">
     <h2>Portfólio Técnico</h2>
     <div class="grid">
-      <div class="project">
-        <h3>Projeto: Reestruturação de Rede LAN</h3>
+      <div class="card">
+        <img src="images/projeto-rede.jpg" alt="Reestruturação de Rede LAN">
+        <h3>Reestruturação de Rede LAN</h3>
         <p>Mapeamento, substituição de switches e organização de racks em ambiente hospitalar.</p>
       </div>
-      <div class="project">
-        <h3>Projeto: Instalação de Fibra Óptica</h3>
+      <div class="card">
+        <img src="images/fibra.jpg" alt="Instalação de Fibra Óptica">
+        <h3>Instalação de Fibra Óptica</h3>
         <p>Planejamento e execução de backbone óptico em condomínio empresarial.</p>
       </div>
     </div>
   </section>
 
+  <!-- YouTube -->
   <section id="youtube">
     <h2>Canal no YouTube</h2>
     <div class="grid">
-      <div class="video">
+      <div class="card">
+        <img src="images/thumb-cabo.jpg" alt="Thumbnail crimpar cabo">
         <h3>🔧 Como crimpar cabo de rede corretamente</h3>
-        <p><a href="https://youtube.com/@SeuCanalAqui" target="_blank" style="color:#38bdf8">Assista agora</a></p>
+        <p><a href="https://youtube.com/@SeuCanalAqui" target="_blank" class="btn">Assista agora</a></p>
       </div>
-      <div class="video">
+      <div class="card">
+        <img src="images/thumb-vlan.jpg" alt="Thumbnail VLAN">
         <h3>🌐 Configurando VLANs em switches gerenciáveis</h3>
-        <p><a href="https://youtube.com/@SeuCanalAqui" target="_blank" style="color:#38bdf8">Assista agora</a></p>
+        <p><a href="https://youtube.com/@SeuCanalAqui" target="_blank" class="btn">Assista agora</a></p>
       </div>
     </div>
   </section>
 
+  <!-- Contato -->
   <section id="contato">
     <h2>Contato</h2>
-    <p>Email: contato@primeops.tech</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/seulinkedin" style="color:#38bdf8" target="_blank">linkedin.com/in/seulinkedin</a></p>
-    <p>GitHub: <a href="https://github.com/seuusuario" style="color:#38bdf8" target="_blank">github.com/seuusuario</a></p>
+    <div class="icons">
+      <a href="mailto:contato@primeops.tech">📧 Email</a>
+      <a href="https://linkedin.com/in/seulinkedin" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/seuusuario" target="_blank">💻 GitHub</a>
+      <a href="https://youtube.com/@SeuCanalAqui" target="_blank">▶️ YouTube</a>
+    </div>
   </section>
 
   <footer>
